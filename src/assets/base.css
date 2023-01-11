@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #2d2d2d;
+    color: whitesmoke;
+  }
+  .list-scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+  .list-scrollbar::-webkit-scrollbar-track {
+    background: #535353;
+    border-radius: 20px;
+  }
+  .list-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #f1f1f3;
+    border-radius: 20px;
+  }
+}
+
+.btn {
+  @apply text-base font-medium rounded-md p-1.5;
+}
+
+.btn--primary {
+  @apply text-white bg-neutral-700;
+}
+
+.btn--secondary {
+  @apply bg-neutral-50 text-neutral-700;
+}
+.btn--delete {
+  @apply bg-red-200 text-red-500;
+}
